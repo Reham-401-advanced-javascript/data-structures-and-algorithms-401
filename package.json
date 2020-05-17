@@ -1,0 +1,20 @@
+{
+  "name": "data-structures-and-algorithms-401",
+  "version": "1.0.0",
+  "description": "You can use the [editor on GitHub](https://github.com/Reham-401-advanced-javascript/data-structures-and-algorithms-401/edit/master/README.md) to maintain and preview the content for your website in Markdown files.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Reham-401-advanced-javascript/data-structures-and-algorithms-401.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Reham-401-advanced-javascript/data-structures-and-algorithms-401/issues"
+  },
+  "homepage": "https://github.com/Reham-401-advanced-javascript/data-structures-and-algorithms-401#readme"
+}
