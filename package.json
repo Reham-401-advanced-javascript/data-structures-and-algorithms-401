@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Reham-401-advanced-javascript/data-structures-and-algorithms-401/issues"
   },
-  "homepage": "https://github.com/Reham-401-advanced-javascript/data-structures-and-algorithms-401#readme"
+  "homepage": "https://github.com/Reham-401-advanced-javascript/data-structures-and-algorithms-401#readme",
+  "dependencies": {
+    "eslint": "^7.0.0"
+  }
 }
