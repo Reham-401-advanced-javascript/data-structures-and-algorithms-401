@@ -14,4 +14,4 @@ But It's so easy ... it didn't take alot of time .
 3) I want to output the contents of 'newArray' when the for loop is finished.
 
 ## Solution
-![whiteboard image ](../../assest/cc1.png)
+![whiteboard image ](../../assest/arrayReverse.png)
