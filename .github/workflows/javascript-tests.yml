@@ -1,6 +1,6 @@
 name: Run Javascript Tests
 
-on: [push]
+on: [push,pull_request]
 
 jobs:
   build:
@@ -23,3 +23,5 @@ jobs:
         npm test
       env:
         CI: true
+    
+    - run: npm run lint

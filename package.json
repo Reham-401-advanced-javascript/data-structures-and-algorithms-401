@@ -4,8 +4,9 @@
   "description": "You can use the [editor on GitHub](https://github.com/Reham-401-advanced-javascript/data-structures-and-algorithms-401/edit/master/README.md) to maintain and preview the content for your website in Markdown files.",
   "main": "index.js",
   "scripts": {
-    "test": "jest --coverage --verbose"
-  },
+    "test": "jest --coverage --verbose",
+    "lint": "eslint '**/*.js'"
+    },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Reham-401-advanced-javascript/data-structures-and-algorithms-401.git"
@@ -17,10 +18,9 @@
     "url": "https://github.com/Reham-401-advanced-javascript/data-structures-and-algorithms-401/issues"
   },
   "homepage": "https://github.com/Reham-401-advanced-javascript/data-structures-and-algorithms-401#readme",
-  "dependencies": {
-    "eslint": "^7.0.0"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "eslint": "^7.0.0",
     "jest": "^26.0.1"
   }
 }
