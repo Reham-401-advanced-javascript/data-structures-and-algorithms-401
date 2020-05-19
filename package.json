@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest --coverage --verbose",
     "lint": "eslint '**/*.js'"
-    },
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Reham-401-advanced-javascript/data-structures-and-algorithms-401.git"
