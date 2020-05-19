@@ -19,6 +19,6 @@ let insertShiftArray = (arr, value) => {
   }
   return shiftedArray;
 };
-insertShiftArray ([1,2,3,5,6,7],4);
+// insertShiftArray ([1,2,3,5],4);
 
 module.exports = insertShiftArray;
