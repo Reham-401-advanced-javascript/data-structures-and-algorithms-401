@@ -8,3 +8,4 @@ Here you will find every code challenge PR ! 💙
 | Class 02 | [array-shift](https://github.com/Reham-401-advanced-javascript/data-structures-and-algorithms-401/pull/5)  |
 | Class 03 | [array-binary-search](https://github.com/Reham-401-advanced-javascript/data-structures-and-algorithms-401/pull/6)  |
 | Class 05 |  [linked-list](https://github.com/Reham-401-advanced-javascript/data-structures-and-algorithms-401/pull/7)  |
+
