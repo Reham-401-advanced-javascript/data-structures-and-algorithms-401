@@ -94,4 +94,6 @@ describe('Linked List', () => {
     expect(linkList.head.next.next.next.value).toEqual(fourth);
     expect(linkList.head.next.next.next.next).toBeNull();
   });
+
+  
 });
