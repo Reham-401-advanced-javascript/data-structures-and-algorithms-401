@@ -26,5 +26,10 @@ use constructor , class and  while loop
 - insertBefore : add a new node with the given newValue immediately before the first value node
 - insertAfter : add a new node with the given newValue immediately after the first value node
 
-## white board 
+
+## white board lab 6
 ![whiteboard image ](../../assest/ll-insertion.jpg)
+
+# white board lab 5
+![whiteboard image ](../../assest/ll.jpg)
+

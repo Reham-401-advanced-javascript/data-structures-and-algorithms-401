@@ -53,6 +53,7 @@ class LinkedList{
     return this;
   }
 
+
   insertBefore(value, newValue) {
 
     let currentNode, previousNode;
@@ -91,6 +92,7 @@ class LinkedList{
     previousNode.next = currentNode;
         
   } 
+
 
 }
 
