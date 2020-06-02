@@ -11,13 +11,30 @@ describe('Linked List', () => {
     const initValue = 'First one';
     ll.insert(initValue);
     expect(ll.head.value).toEqual(initValue);
+    expect(ll.head.next).toBeNull();
+
     const newValue = 'new one';
     ll.insert(newValue);
-    expect(ll.head.value).toEqual(initValue);
-    const final = 'last';
-    expect(ll.head.next.value).toEqual(newValue);
-    ll.insert(final);
-    console.table(ll);
+    expect(ll.head.value).toEqual(newValue);
+    expect(ll.head.next.value).toEqual(initValue);
+    expect(ll.head.next.next).toBeNull();
+
+  });
+  it('Can successfully insert multiple nodes at the beginning of the linked list',()=>{
+    let first = 'this';
+    let second = 'is';
+    let third = 'my';
+    let fourth = 'course';
+    let linkList = new LL();
+    linkList.insert(fourth);
+    linkList.insert(third);
+    linkList.insert(second);
+    linkList.insert(first);
+    expect(linkList.head.value).toEqual(first);
+    expect(linkList.head.next.value).toEqual(second);
+    expect(linkList.head.next.next.value).toEqual(third);
+    expect(linkList.head.next.next.next.value).toEqual(fourth);
+    expect(linkList.head.next.next.next.next).toBeNull();
   });
 
   it('includes', () => {
@@ -42,12 +59,39 @@ describe('Linked List', () => {
     const anotherValue= 'AL-Sobh';
 
 
-    llist.insert(nodeVal);
-    llist.insert(anotherVal);
     llist.insert(anotherValue);
+    llist.insert(anotherVal);
+    llist.insert(nodeVal);
 
     expect(llist.toSrting()).toEqual('Reham Omar AL-Sobh');
    
   });
 
+  it('append()' , () =>{
+    let list = new LL();
+    let myList = list.head;
+    expect(myList).toBeNull();
+    let newValue = 'test value';
+    list.append(newValue);
+    expect(list.head.value).toEqual(newValue);
+    // console.log('my list after append LLL' ,myList );
+
+  });
+
+  it('Can successfully insert multiple nodes at the end of the linked list',()=>{
+    let first = 'this';
+    let second = 'is';
+    let third = 'my';
+    let fourth = 'course';
+    let linkList = new LL();
+    linkList.append(first);
+    linkList.append(second);
+    linkList.append(third);
+    linkList.append(fourth);
+    expect(linkList.head.value).toEqual(first);
+    expect(linkList.head.next.value).toEqual(second);
+    expect(linkList.head.next.next.value).toEqual(third);
+    expect(linkList.head.next.next.next.value).toEqual(fourth);
+    expect(linkList.head.next.next.next.next).toBeNull();
+  });
 });
