@@ -20,3 +20,5 @@ use constructor , class and  while loop
 - toString method : takes in no arguments and returns a string representing all the values in the Linked List, formatted as:
 "{ a } -> { b } -> { c } -> NULL"
 
+# white board 
+![whiteboard image ](../../assest/ll.jpg)
