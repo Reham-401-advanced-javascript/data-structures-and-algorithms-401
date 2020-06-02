@@ -7,17 +7,7 @@ class LinkedList{
   }
 
   insert (value){
-    // let node = new Node(value);
-    // if(!this.head){
-    //   this.head = node;
-    //   return this;
-    // }
-    // let currentNode = this.head;
-    // while (currentNode.next) {
-    //   currentNode = currentNode.next;
-    // }
-    // currentNode.next = node;
-    // return this;
+   
     let node = new Node(value);
     if(!this.head){
       this.head = node;
@@ -63,5 +53,48 @@ class LinkedList{
     return this;
   }
 
+
+  insertBefore(value, newValue) {
+
+    let currentNode, previousNode;
+
+    // check if the list is empty or not , No head 
+    if ( this.head === null) {
+      this.head = new Node(newValue, this.head);
+    }
+
+    let newNode = new Node(newValue);
+    currentNode = this.head;
+    while (currentNode.value !== value) {
+      previousNode = currentNode;
+      currentNode = currentNode.next;
+    }
+    newNode.next = currentNode;
+    previousNode.next = newNode;
+
+  }
+
+  insertAfter(value, newValue) {
+
+    let currentNode, previousNode;
+
+    if (this.head === null) {
+      this.head = new Node(newValue, this.head);
+    }
+
+    let newNode = new Node(newValue);
+    currentNode = this.head;
+    while (currentNode.value !== value) {
+      previousNode = currentNode;
+      currentNode = currentNode.next;
+    }
+    currentNode.next = newNode;
+    previousNode.next = currentNode;
+        
+  } 
+
+
 }
+
+
 module.exports = LinkedList;
