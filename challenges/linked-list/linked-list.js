@@ -63,40 +63,5 @@ class LinkedList{
     return this;
   }
 
-  insertBefore(value, newVal){
-    let newNode = new Node(value);
-    let currentNode = this.head;
-    if(currentNode.value === newVal){
-      this.head = newNode ;
-      this.head.next = currentNode;
-      return this;
-    }
-    while(currentNode.next){
-
-      if(currentNode.next.value === newVal){
-        currentNode.next = newNode;
-      }
-      currentNode = currentNode.next;
-    }
-    // console.log('insertBefore(this)' , this);
-    return this;
-
-  }
-
-  insertAfter(value, newVal){
-    let newNode = new Node(value);
-    let currentNode = this.head;
-    while(currentNode.next){
-      if (currentNode.value === newVal) {
-        currentNode.next = newNode;
-        newNode.next = currentNode.next.next;
-      }
-      currentNode = currentNode.next;
-    }
-    // console.log('insertAfterre(this)' , this);
-
-    return this;
-  }
-
 }
 module.exports = LinkedList;
