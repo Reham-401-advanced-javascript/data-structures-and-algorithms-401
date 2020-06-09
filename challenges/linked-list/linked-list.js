@@ -100,7 +100,7 @@ class LinkedList{
   } 
   valOfK(k){
     let currentNode=this.head;
-    if (k>this.size){
+    if (k>=this.size){
       return ('not exist');
     }else if (k<0){
       return('negative value');
@@ -115,11 +115,10 @@ class LinkedList{
 
 }
 
-module.exports = LinkedList;
-const ll = new LinkedList();
-ll.insert(10);
-ll.insert(20);
-ll.insert(30);
+// const ll = new LinkedList();
+// ll.insert(10);
+// ll.insert(20);
+// ll.insert(30);
 // ll.append(40);
 // ll.append(60);
 // ll.insertBefore(20, 50);
@@ -127,7 +126,7 @@ ll.insert(30);
 // ll.insertAfter(20, 70);
 // ll.valOfK(0);
 
-console.log('llllkkkkkkkkkk : ', ll);
-console.log('llrrrrrrrrrr : ', ll.valOfK(1));
+// console.log('llllkkkkkkkkkk : ', ll);
+// console.log('llrrrrrrrrrr : ', ll.valOfK(1));
 
 module.exports = LinkedList;
