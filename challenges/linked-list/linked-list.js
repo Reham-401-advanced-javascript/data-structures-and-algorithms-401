@@ -4,6 +4,7 @@ const Node=require('../linked-list/node.js');
 class LinkedList{
   constructor(){
     this.head = null;
+    this.size=0;
   }
 
   insert (value){
@@ -15,6 +16,8 @@ class LinkedList{
       node.next = this.head;
       this.head = node;
     }
+    this.size++;
+
   }
   includes(val){
     let currentNode = this.head;
@@ -50,6 +53,7 @@ class LinkedList{
       console.log(' list after add new node ' , currentNode);
 
     }
+    this.size++;
     return this;
   }
 
@@ -71,6 +75,7 @@ class LinkedList{
     }
     newNode.next = currentNode;
     previousNode.next = newNode;
+    this.size++;
 
   }
 
@@ -90,11 +95,38 @@ class LinkedList{
     }
     currentNode.next = newNode;
     previousNode.next = currentNode;
-        
+    this.size++;
+    
   } 
+  valOfK(k){
+    let currentNode=this.head;
+    if (k>=this.size){
+      return ('not exist');
+    }else if (k<0){
+      return('negative value');
+    }else if(this.size>k) {
+      for(let i = 0;i<this.size-k-1;i++){
+        currentNode = currentNode.next;
+      }
+      return currentNode.value;
+    }
+  }
 
 
 }
 
+// const ll = new LinkedList();
+// ll.insert(10);
+// ll.insert(20);
+// ll.insert(30);
+// ll.append(40);
+// ll.append(60);
+// ll.insertBefore(20, 50);
+// ll.insertAfter(40, 60);
+// ll.insertAfter(20, 70);
+// ll.valOfK(0);
+
+// console.log('llllkkkkkkkkkk : ', ll);
+// console.log('llrrrrrrrrrr : ', ll.valOfK(1));
 
 module.exports = LinkedList;

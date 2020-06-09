@@ -33,3 +33,5 @@ use constructor , class and  while loop
 # white board lab 5
 ![whiteboard image ](../../assest/ll.jpg)
 
+# white board lab 7
+![whiteboard image ](../../assest/ll-kth-from-end.jpg)
