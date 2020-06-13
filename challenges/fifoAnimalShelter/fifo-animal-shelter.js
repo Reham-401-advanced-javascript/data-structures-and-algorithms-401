@@ -6,10 +6,7 @@ class AnimalShelter {
   }
   enqueue(animal) {
     if (animal === 'dog' || animal === 'cat') {
-      let result = {
-        name: animal,
-      };
-      animal === 'dog' ? this.dog.push(result) : this.cat.push(result);
+      animal === 'dog' ? this.dog.push(animal) : this.cat.push(animal);
     } else {
       return null;
     }
