@@ -1,40 +1,61 @@
 'use strict';
 class AnimalShelter {
   constructor() {
-    this.dog = [];
-    this.cat = [];
+    this.storage=[];
   }
   enqueue(animal) {
-    if (animal === 'dog' || animal === 'cat') {
-      animal === 'dog' ? this.dog.push(animal) : this.cat.push(animal);
-    } else {
+   
+    if(animal){
+      if(animal.type === 'dog' || animal.type === 'cat'){
+        this.storage.push(animal);
+      }else{
+        return null;
+      }
+       
+    }}
+  dequeue(pref){
+    if(pref){
+      while(this.storage.length != 0){
+        
+        if(this.peek().name === pref.name && this.peek().type === pref.type){
+          return this.peek();
+        }else{
+          this.storage.shift();
+        }
+      }
       return null;
     }
   }
-  dequeue(pref) {
-    if (pref !== 'cat' && pref !== 'dog') {
-      return null;
-    } else {
-      if (pref === 'dog') {
-        this.dog.pop();
-        return this.dog;
-      }
-  
-      else {
-        this.cat.pop();
-        return this.cat;
-        
-      }
-    }
+  peek(){
+    return this.storage[0];
   }
 }
+
+// class Queue {
+//   constructor() {
+//     this.storage = [];
+//   }
+//   enqueue(item) {
+//     this.storage.push(item);
+//     //this.storage.unshift(item)
+//   }
+//   dequeue() {
+//     return this.storage.shift();
+//     // return this.storage.pop()
+//   }
+
+//   peek() {
+//     return this.storage[0];
+//   }
+//   
+// }
+
 module.exports = AnimalShelter;
 let shelter=new AnimalShelter();
-shelter.enqueue('cat');
-shelter.enqueue('dog');
-shelter.enqueue('dog');
-shelter.enqueue('dog');
-shelter.dequeue('dog');
+shelter.enqueue({type : 'cat' , name : 'caty'});
+shelter.enqueue({type : 'dog' , name : 'loly'});
+shelter.enqueue({type : 'dog' , name : 'black'});
+shelter.dequeue({type : 'dog' , name : 'loly'});
 
 
 

@@ -8,4 +8,4 @@ enqueue(),dequeue() :
 O(1) --> time
 O(1)-->space
 ## Solution
-![whiteboard image ](../../assest/arrayReverse.png)
+![whiteboard image ](../../assest/fifo.jpg)
