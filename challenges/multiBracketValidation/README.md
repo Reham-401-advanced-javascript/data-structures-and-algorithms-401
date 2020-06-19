@@ -16,8 +16,8 @@ Curly Brackets : {}
 ## Approach & Efficiency
 
 big O :
-space --> O()
-time --> O()
+space --> O(n)
+time --> O(n)
 
 ## Solution
 - ![whiteboard Matrix inner Sum ](../../assest/bracket.jpg)
