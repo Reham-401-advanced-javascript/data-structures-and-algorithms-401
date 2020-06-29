@@ -2,10 +2,9 @@
 Represent how linked list  work and linked to each other as a object chain
 
 ## Challenge
-Create a Node class that has properties for the value stored in the Node, and a pointer to the next Node.
-
+k-th value from the end of a linked list.
 ## Approach & Efficiency
-use constructor , class and  while loop
+use constructor , class and  for loop
 
 ### big O 
 
@@ -15,6 +14,7 @@ use constructor , class and  while loop
 - append :  space O(n) , time O(1)
 - insertBefore:  space O(n) , time O(1)
 - insertAfter :  space O(n) , time O(1)
+- k value : space 0(1) ,time 0(n)
 
 
 ## API
@@ -25,11 +25,13 @@ use constructor , class and  while loop
 - append :adds a new node with the given value to the end of the list
 - insertBefore : add a new node with the given newValue immediately before the first value node
 - insertAfter : add a new node with the given newValue immediately after the first value node
-
-
-## white board lab 6
-![whiteboard image ](../../assest/ll-insertion.jpg)
+- valOfK : return k-th value from the end of a linked list.
 
 # white board lab 5
 ![whiteboard image ](../../assest/ll.jpg)
 
+## white board lab 6
+![whiteboard image ](../../assest/ll-insertion.jpg)
+
+# white board lab 7
+![whiteboard image ](../../assest/ll-kth-from-end.jpg)

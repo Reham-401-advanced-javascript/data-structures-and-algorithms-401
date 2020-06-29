@@ -11,3 +11,6 @@ Here you will find every code challenge PR ! 💙
 | Class 05 |  [linked-list](https://github.com/Reham-401-advanced-javascript/data-structures-and-algorithms-401/pull/7)  |
 | Class 26 |  [sort](https://github.com/Reham-401-advanced-javascript/data-structures-and-algorithms-401/pull/25)  |
 
+| Class 07 |  [lll-kth-from-end](https://github.com/Reham-401-advanced-javascript/data-structures-and-algorithms-401/pull/15/)  |
+| Class 10|  [QueueAndStack](https://github.com/Reham-401-advanced-javascript/data-structures-and-algorithms-401/pull/12)  |
+| Class 13|  [multi-bracket-validation](https://github.com/Reham-401-advanced-javascript/data-structures-and-algorithms-401/pull/22)  |
