@@ -1,5 +1,4 @@
-[8,4,23,42,16,15]
-
+## first pass
 arr[] = {8,  4,  23, 42, 16, 15}
 Indexes:  0   1   2   3   4   5   
 
@@ -31,19 +30,22 @@ Finally we place pivot at correct position by swapping
 arr[i+1] and arr[right] (or pivot) 
 arr[] = [8,4,15,42,16,23]
 
+## second pass
 **then the left quick sort :**
 sort the [8,4,15]
 pivot = 15 ==> no change 
 then pivot =4 ==> swip 8 , 4 ==> [4,8,15]
+the result 
+arr=[4,8,15,42,16,23]
 
+## third pass
 **then the right quick sort :**
 sort the [42,16,23]
 pivot = 23 
 then pivot = 16
 then pivot = 42
 
-**at the end** 
-it will be [4,8,15,16,23,42]
+arr= [4,8,15,16,23,42]
 
 
 
