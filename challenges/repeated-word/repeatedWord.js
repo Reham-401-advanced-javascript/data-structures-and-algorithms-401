@@ -104,7 +104,7 @@ class Hashmap {
   }
 
 }
-  
+module.exports = Hashmap;
 const hashmap = new Hashmap(4000); // ==> [4000]
 hashmap.set('name', 'mahmoud');
 hashmap.set('one', 'thing');
