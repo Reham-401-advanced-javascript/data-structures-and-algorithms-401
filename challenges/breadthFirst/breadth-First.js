@@ -79,6 +79,7 @@ class Graph {
     return visited;
   
   }
+
   
 }
 const graph = new Graph();
@@ -106,5 +107,5 @@ graph.addDirectedEdge(eight, three);
 // console.log(graph);
 graph.printAll();
 console.log('NEIGHBORS', graph.getNeighbors(ten));
-console.log('NEIGHBbbbbbbbbbbbbbbbbbbbbbbbbbbbbbORS', graph.bfs(ten));
+console.log('NEIGHBbbbbbbbbbbbbbbbbbbbbbbbbbbbbbORS', graph.bfs(two));
 
