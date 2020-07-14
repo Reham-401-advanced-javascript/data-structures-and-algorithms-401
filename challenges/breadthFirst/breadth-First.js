@@ -79,8 +79,7 @@ class Graph {
     return visited;
   
   }
-
-  
+   
 }
 const graph = new Graph();
 const ten = new Vertex(10);
