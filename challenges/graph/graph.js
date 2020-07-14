@@ -43,6 +43,19 @@ class Graph {
   size(){
     return this._adjancyList.size;
   }
+  // getEdge(arr) {
+  //   let neighrbor = this.getNeighbors(arr[0]);
+  //   console.log('ssssssssssssss',neighrbor);
+  //   for (let i = 0; i < neighrbor.length; i++) {
+  //     // console.log('aaaaaaaaaaaaaaa',neighrbor[i].vertex);
+  //     // console.log('aaaaaaaaaaaa2',arr[1]);
+
+  //     if (arr[1] === neighrbor[i].vertex) {
+  //       return `True, ${neighrbor[i].weight}$`;
+  //     }
+  //   }
+  //   return `False, 0$`;
+  // }
 }
 const graph = new Graph();
 const ten = new Vertex(10);
@@ -70,3 +83,5 @@ graph.addDirectedEdge(eight, three);
 graph.printAll();
 console.log('NEIGHBORS', graph.getNeighbors(ten));
 console.log('NEIGHBbbbbbbbbbbbbbbbbbbbbbbbbbbbbbORS', graph.size());
+// console.log('NEIGHBbbbbbbbbbbbbbbbbbbbbbbbbbbbbbORS', graph.getEdge([ten,three]));
+
