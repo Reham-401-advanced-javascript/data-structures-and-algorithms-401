@@ -43,6 +43,32 @@ class Graph {
   size(){
     return this._adjancyList.size;
   }
+  // depthFirst(startNode){
+  //   const stack = []; 
+  //   const checked = new Set(); 
+
+  //   checked.add(startNode);
+  //   stack.push(startNode);
+
+  //   while (stack.length) {
+  //     const currentNode = stack.pop();
+  //     const neighbors = this.getNeighbors(currentNode);
+  //     for (let neighbor of neighbors) {
+  //       const neighborNode = neighbor.vertex;
+  //       if(!checked.has(neighborNode)) {
+  //         checked.add(neighborNode);
+  //         stack.push(neighborNode);
+  //       }
+  //     }
+  //   }    
+    
+  //   let array = [];
+  //   for (let val of checked) {
+  //     array.push(val.value);
+  //   }
+  //   return array;  
+      
+  // }
   // getEdge(arr) {
   //   let neighrbor = this.getNeighbors(arr[0]);
   //   console.log('ssssssssssssss',neighrbor);
@@ -81,7 +107,7 @@ graph.addDirectedEdge(three, seven);
 graph.addDirectedEdge(eight, three);
 // console.log(graph);
 graph.printAll();
-console.log('NEIGHBORS', graph.getNeighbors(ten));
-console.log('NEIGHBbbbbbbbbbbbbbbbbbbbbbbbbbbbbbORS', graph.size());
+console.log('NEIGfffffffffffffffffffffffffHBORS', graph.depthFirst(ten));
+// console.log('NEIGHBbbbbbbbbbbbbbbbbbbbbbbbbbbbbbORS', graph.size());
 // console.log('NEIGHBbbbbbbbbbbbbbbbbbbbbbbbbbbbbbORS', graph.getEdge([ten,three]));
 
